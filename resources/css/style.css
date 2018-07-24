@@ -1,0 +1,197 @@
+body {
+	font-size: 16px;
+	font-family: 'Avenir', sans-serif;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.interface {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	flex-direction: column;
+	color: #FFFFFF;
+	background-color: #3B3561;
+	justify-content: center;
+	width: 100%;
+}
+
+/*Logo*/
+.logo {
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.logo p {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.logo img {
+	width: 20rem;
+	margin-bottom: 1rem;
+}
+
+/*Icons*/
+.icons {
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.icon {
+	margin: 4rem;
+}
+
+i.fa-2x {
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	color: #FFF;
+	padding: 1.25rem;
+}
+
+i.fa-2x:hover {
+	background-color: #FFFFFF;
+	color: #3B3561;
+}
+
+@media only screen and (max-width: 900px) {
+  .icon {
+	margin: 2rem;
+}
+}
+
+/*Search Bar*/
+.searchBar {
+	justify-content: center;
+	align-items: center;
+}
+
+.searchTerm {
+	width: 50%;
+	border: 3px solid #FFF;
+	padding: 5px;
+	height: 30px;
+	border-radius: 5px;
+	outline: none;
+	color: #F05068;
+	font-size: 1rem;
+}
+
+.searchTerm:focus{
+	color: #F05068;
+}
+
+.searchButton {
+	width: 40px;
+	height: 45px;
+	border: 1px solid #F05068;
+	background: #F05068;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.searchButton:hover {
+	background-color: #C54659;
+}
+
+.searchButton:active {
+	background-color: #C54659;
+}
+
+/*Button*/
+.button {
+	justify-content: center;
+	margin-top: 2rem;
+	background-color: #F05068;
+	padding: 1rem;
+	width: 8rem;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.button:hover {
+	background-color: #C54659;
+}
+
+.button:active {
+	background-color: #C54659;
+}
+
+/*Locations*/
+.popular {
+	width: 100%;
+	flex-direction: column;
+	margin-bottom: 5rem;
+}
+
+.popular h1 {
+	font-weight: 500;
+	font-size: 2rem;
+	margin: 2rem;
+}
+
+.locations {
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.location {
+	flex-direction: column;
+	border: 3px solid #3B3561;
+}
+
+.location img {
+	width: 20rem;
+	height: 15rem;
+}
+
+.locationInfo {
+	padding: 1rem;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.rating {
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #F05068;
+}
+
+.fa-heart {
+	color: #F05068;
+	font-size: 1.5rem;
+}
+
+.additional {
+	font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 900px) {
+	.locations {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.location {
+	margin-bottom: 1rem;
+}
+}
