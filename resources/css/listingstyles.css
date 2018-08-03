@@ -1,0 +1,169 @@
+body {
+	font-size: 16px;
+	font-family: 'Avenir', sans-serif;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+	width: 100%;
+}
+
+/*Logo*/
+
+.header {
+	padding: 1rem 0rem;
+	flex-direction: column;
+	color: #FFFFFF;
+	background-color: #3B3561;
+	justify-content: center;
+}
+
+.logo {
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo img {
+	width: 40rem;
+}
+
+/*Search Bar*/
+.search {
+	background-color: #676767;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchBar {
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+
+}
+
+.searchTerm {
+	width: 50%;
+	border: 3px solid #FFF;
+	padding: 5px;
+	height: 30px;
+	border-radius: 3px;
+	outline: none;
+	color: #F05068;
+	font-size: 1rem;
+}
+
+.searchTerm:focus{
+	color: #F05068;
+}
+
+.currentLocation {
+	width: 40px;
+	height: 45px;
+	border: 1px solid #F05068;
+	background: #F05068;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.currentLocation:hover {
+	background-color: #C54659;
+}
+
+
+.button {
+	justify-content: center;
+	margin: 2rem 0rem;
+	background-color: #F05068;
+	padding: 1rem;
+	width: 8rem;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #FFF;
+}
+
+.button:hover {
+	background-color: #C54659;
+}
+
+/*Locations*/
+.locations {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #eaeaea;
+}
+
+.location {
+	width: 80%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 2rem;
+	height: 10rem;
+}
+
+.location div {
+	margin-right: 5rem;
+} 
+
+.locationImg {
+	width: 30rem;
+	height: 10rem;
+}
+
+.locationImg img{
+	width: 20rem;
+	height: 10rem;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.rating {
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #F05068;
+}
+
+.fa-heart {
+	color: #F05068;
+	font-size: 1.5rem;
+}
+
+.locationInfo {
+	padding-left: 1rem;
+	flex-direction: column;
+}
+
+
+.locationLink {
+	justify-content: center;
+	align-items: center;
+}
+
+.view {
+	color: #FFFFFF;
+	background-color: #3B3561;
+	padding: 2rem 5rem;
+	border-radius: 3px;
+}
+
+.view:hover {
+	background-color: #292542;
+}
