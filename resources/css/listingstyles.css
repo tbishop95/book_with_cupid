@@ -32,7 +32,7 @@ a {
 }
 
 .logo img {
-	width: 40rem;
+	width: 30rem;
 }
 
 /*Search Bar*/
@@ -107,13 +107,15 @@ a {
 }
 
 .location {
-	width: 80%;
+	width: 75%;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	background-color: #FFFFFF;
 	padding: 2rem;
-	height: 10rem;
+	height: 8rem;
+	margin-bottom: 1rem;
+	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .location div {
@@ -141,16 +143,28 @@ a {
 	color: #F05068;
 }
 
-.fa-heart {
+.hearts {
 	color: #F05068;
-	font-size: 1.5rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
 }
 
 .locationInfo {
+	justify-content: center;
 	padding-left: 1rem;
 	flex-direction: column;
+	border-right: 1px solid #656565;
+	height: 10rem;
+	margin-right: 1rem;
 }
 
+.locationInfo span {
+	margin-bottom: 1rem;
+}
+
+.learnMore {
+	align-items: center;
+}
 
 .locationLink {
 	justify-content: center;
@@ -160,10 +174,14 @@ a {
 .view {
 	color: #FFFFFF;
 	background-color: #3B3561;
-	padding: 2rem 5rem;
+	padding: 1rem 2rem;
 	border-radius: 3px;
 }
 
 .view:hover {
 	background-color: #292542;
+}
+
+@media only screen and (max-width: 700px) {
+
 }
