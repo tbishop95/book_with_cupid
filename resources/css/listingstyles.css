@@ -9,6 +9,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: #FFFFFF;
 }
 
 .flex {
@@ -35,6 +36,12 @@ a {
 	width: 30rem;
 }
 
+@media only screen and (max-width: 700px) {
+	.logo img {
+		width: 20rem;
+	}
+}
+
 /*Search Bar*/
 .search {
 	background-color: #676767;
@@ -47,6 +54,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	margin-top: 1rem;
+	margin-bottom: 2rem;
 
 }
 
@@ -55,7 +63,7 @@ a {
 	border: 3px solid #FFF;
 	padding: 5px;
 	height: 30px;
-	border-radius: 3px;
+	border-radius: 5px 0px 0px 5px;
 	outline: none;
 	color: #F05068;
 	font-size: 1rem;
@@ -66,13 +74,13 @@ a {
 }
 
 .currentLocation {
-	width: 40px;
-	height: 45px;
+	width: 70px;
+	height: 46px;
 	border: 1px solid #F05068;
 	background: #F05068;
 	text-align: center;
 	color: #fff;
-	border-radius: 5px;
+	border-radius: 0px 5px 5px 0px;
 	cursor: pointer;
 	font-size: 20px;
 }
@@ -81,25 +89,9 @@ a {
 	background-color: #C54659;
 }
 
-
-.button {
-	justify-content: center;
-	margin: 2rem 0rem;
-	background-color: #F05068;
-	padding: 1rem;
-	width: 8rem;
-	border-radius: 10px;
-	font-size: 1.5rem;
-	font-weight: 500;
-	color: #FFF;
-}
-
-.button:hover {
-	background-color: #C54659;
-}
-
 /*Locations*/
 .locations {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -107,40 +99,39 @@ a {
 }
 
 .location {
-	width: 75%;
+	width: 70%;
+	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	background-color: #FFFFFF;
 	padding: 2rem;
-	height: 8rem;
-	margin-bottom: 1rem;
+	background-color: #FFFFFF;
 	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+	margin-bottom: 1rem;
 }
 
-.location div {
-	margin-right: 5rem;
-} 
-
-.locationImg {
-	width: 30rem;
+.locationImg img {
+	width: 12rem;
 	height: 10rem;
 }
 
-.locationImg img{
-	width: 20rem;
+.locationInfo {
+	display: flex;
+	justify-content: center;
+	padding-left: 1rem;
+	flex-direction: column;
+	border-right: 1px solid #656565;
 	height: 10rem;
+	padding-right: 5rem;
+}
+
+.locationInfo span {
+	margin-bottom: 1rem;
 }
 
 .title {
 	font-weight: 500;
 	font-size: 1.5rem;
-}
-
-.rating {
-	font-weight: 500;
-	font-size: 1.5rem;
-	color: #F05068;
 }
 
 .hearts {
@@ -149,26 +140,23 @@ a {
 	margin-bottom: 1rem;
 }
 
-.locationInfo {
-	justify-content: center;
-	padding-left: 1rem;
-	flex-direction: column;
-	border-right: 1px solid #656565;
-	height: 10rem;
-	margin-right: 1rem;
-}
-
-.locationInfo span {
-	margin-bottom: 1rem;
-}
-
-.learnMore {
-	align-items: center;
-}
-
 .locationLink {
-	justify-content: center;
-	align-items: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.bestPrice,
+.price {
+	color: #F05068;
+	font-size: 1.25rem;
+}
+
+.price {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-top: 0.25rem;
+	margin-bottom: 3rem;
 }
 
 .view {
@@ -176,6 +164,7 @@ a {
 	background-color: #3B3561;
 	padding: 1rem 2rem;
 	border-radius: 3px;
+	text-align: center;
 }
 
 .view:hover {
@@ -183,5 +172,37 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
+	.location {
+		width: 90%;
+	}
 
+	.locationImg {
+		width: 30%;
+	}
+
+	.locationImg img {
+		width: 6rem;
+		height: 5rem;
+	}
+
+	.locationInfo {
+		border: none;
+		width: 70%;
+		margin: 0;
+	}
+
+	.learn, .locationLink {
+		display: none;
+	}
+
+	.pricing {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.locationLinkMob {
+		display: inherit;
+		text-align: center;
+		align-items: space-between;
+	}
 }

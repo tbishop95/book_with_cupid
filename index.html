@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
-  <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
- <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
+  </script>
   <title>Book With Cupid</title>
 </head>
 <body>
   <div class="interface flex">
     <div class="logo flex">
       <img src="resources/images/BWC-Logo-3.png">
-      <p>Find the perfect spot for a first date, or spark some romance into your<br/> relationship with an unforgettable date night all at the click of a button.</p>
+      <p>Find the perfect spot for a first date, or spark some romance into your<br>
+      relationship with an unforgettable date night all at the click of a button.</p>
     </div>
     <div class="buttons-container flex">
-  <ul>
-    <li><a href="#bars"><i class="fas fa-glass-martini" aria-hidden="true"></i></a></li>
-    <li><a href="#restaurants"><i class="fas fa-utensils" aria-hidden="true"></i></a></li>
-    <li><a href="#hotels"><i class="fa fa-bed" aria-hidden="true"></i></a></li>
-  </ul>
-</div>
+      <ul>
+        <li>
+          <a href="#bars"><i aria-hidden="true" class="fas fa-glass-martini"></i></a>
+        </li>
+        <li>
+          <a href="#restaurants"><i aria-hidden="true" class="fas fa-utensils"></i></a>
+        </li>
+        <li>
+          <a href="#hotels"><i aria-hidden="true" class="fa fa-bed"></i></a>
+        </li>
+      </ul>
+    </div>
     <div class="searchBar flex">
-      <input type="text" class="searchTerm" placeholder="Enter Town, City or Postcode">
-      <button type="submit" class="searchButton">
-        <i class="fas fa-crosshairs"></i>
-      </button>
+      <input class="searchTerm" placeholder="Enter Town, City or Postcode" type="text"> <button class="searchButton" onclick="getLocation()" type="submit"><i class="fas fa-crosshairs"></i></button>
     </div>
     <center>
       <div class="button flex">
@@ -35,164 +41,224 @@
     </center>
   </div>
   <div class="popular flex">
-    <h1>Popular Bars In Your Location</h1>
+    <h1>Popular Hotels In Your Location</h1>
     <div class="customNavigation">
-    <a class="btn gray prev"><i class="fas fa-arrow-left"></i></a>
-    <a class="btn gray next"><i class="fas fa-arrow-right"></i></a>
+      <a class="btn gray prev"><i class="fas fa-arrow-left"></i></a> <a class="btn gray next"><i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="owl-carousel" id="slider-carousel">
+      <div class="item">
+        <a class="hoverfx" href="www.bso.co.uk">
+        <div class="figure">
+          <i class="fas fa-link"></i>
+        </div>
+        <div class="overlay"></div><img src="resources/images/hotels/De_Trafford.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">De Trafford</span>
+          <div class="hearts">
+            <span class="rating">3.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound; | Alderley Edge</span>
+        </div>
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">&lt;
+        <div class="figure">
+          <i class="fas fa-link"></i>
+        </div>
+        <div class="overlay"></div><img src="resources/images/hotels/Alderley_Edge_Hotel.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">Alderley Edge Hotel</span>
+          <div class="hearts">
+            <span class="rating">4.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound;&pound;&pound; | Alderley Edge</span>
+        </div>
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="fas fa-link"></i>
+        </div>
+        <div class="overlay"></div><img src="resources/images/hotels/The_Wilmslow_Lodge.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">The Wilmslow Lodge</span>
+          <div class="hearts">
+            <span class="rating">4.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound; | Alderley Edge</span>
+        </div>
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="fas fa-link"></i>
+        </div>
+        <div class="overlay"></div><img src="resources/images/hotels/Wizards_Thatch.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">Wizards Thatch</span>
+          <div class="hearts">
+            <span class="rating">5.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+          </div><span class="additional">&pound;&pound;&pound; | Alderley Edge</span>
+        </div>
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="fas fa-link"></i>
+        </div>
+        <div class="overlay"></div><img src="resources/images/hotels/The_King_William.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">The King William</span>
+          <div class="hearts">
+            <span class="rating">3.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound; | Alderley Edge</span>
+        </div>
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="fas fa-link"></i>
+        </div>
+        <div class="overlay"></div><img src="resources/images/hotels/Mottram_Hall.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">Mottram Hall</span>
+          <div class="hearts">
+            <span class="rating">4.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound;&pound; | Alderley Edge</span>
+        </div>
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="fas fa-link"></i>
+        </div>
+        <div class="overlay"></div><img src="resources/images/hotels/Innkeeper_Lodge.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">Innkeeper's Lodge Alderley Edge</span>
+          <div class="hearts">
+            <span class="rating">4.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound;&pound; | Alderley Edge</span>
+        </div>
+      </div>
+    </div>
   </div>
-
-
-  <div id="slider-carousel" class="owl-carousel">
-    <div class="item">
-      <a class="hoverfx" href="www.bso.co.uk">
+  <div class="popular flex">
+    <h1>Popular Restaurants In Your Location</h1>
+    <div class="customNavigation">
+      <a class="btn gray prev"><i class="fas fa-arrow-left"></i></a> <a class="btn gray next"><i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="owl-carousel2" id="slider-carousel2">
+      <div class="item">
+        <a class="hoverfx" href="www.bso.co.uk">
         <div class="figure">
           <i class="fas fa-link"></i>
         </div>
-        <div class="overlay">
-        </div>
-        <img src="http://cdn.ltstatic.com/2017/March/OO236614_942long.jpg">
-      </a>
-      <div class="locationInfo">
-          <span class="title">Ealing Park Tavern</span>
+        <div class="overlay"></div><img src="resources/images/hotels/The_Oakwood.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">The Oakwood</span>
           <div class="hearts">
-            <span class="rating">4.0 </span>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="far fa-heart"></i>
-          </div>
-          <span class="additional">&pound;&pound; | London</span>
+            <span class="rating">4.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound;&pound;&pound; | Alderley Edge</span>
         </div>
-    </div>
-
-    <div class="item">
-      <a class="hoverfx" href="#">
-        <<div class="figure">
-          <i class="fas fa-link"></i>
-        </div>
-        <div class="overlay">
-        </div>
-        <img src="http://cdn.ltstatic.com/2011/August/JI318725_429long.jpg">
-      </a>
-      <div class="locationInfo">
-          <span class="title">Bollo House</span>
-          <div class="hearts">
-            <span class="rating">3.0 </span>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="far fa-heart"></i>
-            <i class="far fa-heart"></i>
-          </div>
-          <span class="additional">&pound; | London</span>
-        </div>
-    </div>
-
-    <div class="item">
-      <a class="hoverfx" href="#">
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">&lt;
         <div class="figure">
           <i class="fas fa-link"></i>
         </div>
-        <div class="overlay">
-        </div>
-        <img src="http://cdn.ltstatic.com/2012/November/DT825156_429long.jpg">
-      </a>
-      <div class="locationInfo">
-          <span class="title">The Swan</span>
+        <div class="overlay"></div><img src="resources/images/hotels/Alderley_Restaurant.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">Alderley Restaurant</span>
           <div class="hearts">
-            <span class="rating">3.0 </span>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="far fa-heart"></i>
-            <i class="far fa-heart"></i>
-          </div>
-          <span class="additional">&pound; | London</span>
+            <span class="rating">4.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound;&pound;&pound;&pound; | Alderley Edge</span>
         </div>
-    </div>
-
-    <div class="item">
-      <a class="hoverfx" href="#">
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">
         <div class="figure">
           <i class="fas fa-link"></i>
         </div>
-        <div class="overlay">
-        </div>
-        <img src="http://cdn.ltstatic.com/2014/June/VS565607_942long.jpg">
-      </a>
-      <div class="locationInfo">
-          <span class="title">The Lamb</span>
+        <div class="overlay"></div><img src="resources/images/hotels/La_Popote.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">La Popote</span>
           <div class="hearts">
-            <span class="rating">5.0 </span>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-          <span class="additional">&pound;&pound;&pound; | London</span>
+            <span class="rating">5.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+          </div><span class="additional">&pound;&pound;&pound;&pound; | Marton</span>
         </div>
-    </div>
-
-    <div class="item">
-      <a class="hoverfx" href="#">
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">
         <div class="figure">
           <i class="fas fa-link"></i>
         </div>
-        <div class="overlay">
-        </div>
-        <img src="http://cdn.ltstatic.com/2008/November/QZ173505_942long.jpg">
-      </a>
-      <div class="locationInfo">
-          <span class="title">The Devonshire Arms</span>
+        <div class="overlay"></div><img src="resources/images/hotels/The_Clink.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">The Clink</span>
           <div class="hearts">
-            <span class="rating">5.0 </span>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-          <span class="additional">&pound;&pound; | London</span>
+            <span class="rating">5.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+          </div><span class="additional">&pound;&pound; | Wilmslow</span>
         </div>
+      </div>
+      <div class="item">
+        <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="fas fa-link"></i>
+        </div>
+        <div class="overlay"></div><img src="resources/images/hotels/The_Romper.jpg"></a>
+        <div class="locationInfo">
+          <span class="title">Romper</span>
+          <div class="hearts">
+            <span class="rating">4.0</span> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="far fa-heart"></i>
+          </div><span class="additional">&pound; | Alderley Edge</span>
+        </div>
+      </div>
     </div>
-
   </div>
-
-</div>
-  
-</body>
-<script>
+  <script>
   const lis = document.querySelectorAll("li");
-const a = document.querySelectorAll("li a");
+  const a = document.querySelectorAll("li a");
 
-for (let i = 0; i < lis.length; i++) {
-  lis[i].addEventListener("click", function() {
-    for (let i = 0; i < lis.length; i++) {
-      lis[i].classList.remove("active");
-      a[i].classList.remove("active-text");
-    }
-    this.classList.add("active");
-    a[i].classList.add("active-text");
-  });
-}
-
- $(document).ready(function() {
-     var owl = $("#slider-carousel");
-     owl.owlCarousel({
-       items: 4,
-       itemsDesktop: [1000, 4],
-       itemsDesktopSmall: [900, 2],
-       itemsTablet: [600, 1],
-       itemsMobile: false,
-       pagination: false
-     });
-     $(".next").click(function() {
-       owl.trigger('owl.next');
-     })
-     $(".prev").click(function() {
-       owl.trigger('owl.prev');
-     })
+  for (let i = 0; i < lis.length; i++) {
+   lis[i].addEventListener("click", function() {
+     for (let i = 0; i < lis.length; i++) {
+       lis[i].classList.remove("active");
+       a[i].classList.remove("active-text");
+     }
+     this.classList.add("active");
+     a[i].classList.add("active-text");
    });
-</script>
+  }
+
+  $(document).ready(function() {
+   var owl = $("#slider-carousel");
+   owl.owlCarousel({
+     items: 4,
+     itemsDesktop: [1000, 4],
+     itemsDesktopSmall: [900, 2],
+     itemsTablet: [600, 1],
+     itemsMobile: false,
+     pagination: false
+   });
+   $(".next").click(function() {
+     owl.trigger('owl.next');
+   })
+   $(".prev").click(function() {
+     owl.trigger('owl.prev');
+   })
+  });
+
+  var x = document.getElementById("demo");
+
+  function getLocation() {
+   if (navigator.geolocation) {
+     navigator.geolocation.getCurrentPosition(showPosition);
+   } else {
+     x.innerHTML = "Geolocation is not supported by this browser.";
+   }
+  }
+
+  function showPosition(position) {
+   x.innerHTML = "Latitude: " + position.coords.latitude +
+   "<br>Longitude: " + position.coords.longitude;
+  }
+  </script>
+</body>
+</html>

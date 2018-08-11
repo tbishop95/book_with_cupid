@@ -1,159 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
-  <link href="./resources/css/listingstyles.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./resources/css/listingstyles.css" rel="stylesheet" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet">
   <title>Book With Cupid - Listing</title>
 </head>
 <body>
   <div class="header flex">
-    <div class="logo flex">
-      <img src="resources/images/BWC-Logo-2.png">
-    </div>
+    <div class="logo flex"><img src="resources/images/BWC-Logo-2.png"></div>
   </div>
   <div class="search flex">
-  <div class="searchBar flex">
-      <input type="text" class="searchTerm" placeholder="Enter Town, City or Postcode">
-      <button type="submit" class="currentLocation">
-        <i class="fas fa-crosshairs"></i>
-      </button>
-    </div>
-      <div class="button flex">
-        <span>Find</span>
-      </div>
+    <div class="searchBar flex">
+      <input class="searchTerm" placeholder="Enter Town, City or Postcode" type="text"> <button class="currentLocation" type="submit"><a class="findButton" href="#">Find</a></button>
     </div>
   </div>
   <div class="locations flex">
     <div class="location flex">
-      <div class="locationImg">
-        <img src="resources/images/whately_hall.jpeg">
+      <div class="locationImg"><img src="resources/images/hotels/De_Trafford.jpg"></div>
+      <div class="locationInfo">
+        <span class="title">De Trafford</span>
+        <div class="hearts">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+        </div><span class="titleLocation">Alderley Edge (0.2 miles to your location)</span> <a class="view" href="#">Learn More</a>
       </div>
-      <div class="locationInfo flex">
-        <span class="title">Whately Hall</span>
-          <div class="hearts">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-           <span class="titleLocation">Banbury</span>
-           <div class="learnMore flex">
-        <span class="view">Learn More</span>
-      </div>
-      </div>
-      <div class="locationLink flex">
-        <span class="view">Book Now</span>
+      <div class="locationLink">
+        <span class="bestPrice">Expedia</span> <span class="price">&pound;68</span> <a class="view" href="#">Book Now</a>
       </div>
     </div>
     <div class="location flex">
-      <div class="locationImg">
-        <img src="resources/images/whately_hall.jpeg">
+      <div class="locationImg"><img src="resources/images/hotels/Alderley_Edge_Hotel.jpg"></div>
+      <div class="locationInfo">
+        <span class="title">Alderley Edge Hotel</span>
+        <div class="hearts">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+        </div><span class="titleLocation">Alderley Edge (0.2 miles to your location)</span> <a class="view" href="#">Learn More</a>
       </div>
-      <div class="locationInfo flex">
-        <span class="title">Whately Hall</span>
-          <div class="hearts">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-           <span class="titleLocation">Banbury</span>
-      <div class="learnMore flex">
-        <span class="view">Learn More</span>
-      </div>
-      </div>
-      <div class="locationLink flex">
-        <span class="view">Book Now</span>
+      <div class="locationLink">
+        <span class="bestPrice">Hotels.com</span> <span class="price">&pound;130</span> <a class="view" href="#">Book Now</a>
       </div>
     </div>
     <div class="location flex">
-      <div class="locationImg">
-        <img src="resources/images/whately_hall.jpeg">
+      <div class="locationImg"><img src="resources/images/hotels/The_Wilmslow_Lodge.jpg"></div>
+      <div class="locationInfo">
+        <span class="title">The Wilmslow Lodge</span>
+        <div class="hearts">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+        </div><span class="titleLocation">Alderley Edge (1.6 miles to your location)</span> <a class="view" href="#">Learn More</a>
       </div>
-      <div class="locationInfo flex">
-        <span class="title">Whately Hall</span>
-          <div class="hearts">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-           <span class="titleLocation">Banbury</span>
-      <div class="learnMore flex">
-        <span class="view">Learn More</span>
-      </div>
-      </div>
-      <div class="locationLink flex">
-        <span class="view">Book Now</span>
+      <div class="locationLink">
+        <span class="bestPrice">Expedia</span> <span class="price">&pound;64</span> <a class="view" href="#">Book Now</a>
       </div>
     </div>
     <div class="location flex">
-      <div class="locationImg">
-        <img src="resources/images/whately_hall.jpeg">
+      <div class="locationImg"><img src="resources/images/hotels/Wizards_Thatch.jpg"></div>
+      <div class="locationInfo">
+        <span class="title">Wizards Thatch</span>
+        <div class="hearts">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+        </div><span class="titleLocation">Alderley Edge (0.2 miles to your location)</span> <a class="view" href="#">Learn More</a>
       </div>
-      <div class="locationInfo flex">
-        <span class="title">Whately Hall</span>
-          <div class="hearts">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-           <span class="titleLocation">Banbury</span>
-      <div class="learnMore flex">
-        <span class="view">Learn More</span>
-      </div>
-      </div>
-      <div class="locationLink flex">
-        <span class="view">Book Now</span>
+      <div class="locationLink">
+        <span class="bestPrice">Booking.com</span> <span class="price">&pound;139</span> <a class="view" href="#">Book Now</a>
       </div>
     </div>
     <div class="location flex">
-      <div class="locationImg">
-        <img src="resources/images/whately_hall.jpeg">
+      <div class="locationImg"><img src="resources/images/hotels/The_King_William.jpg"></div>
+      <div class="locationInfo">
+        <span class="title">The King William</span>
+        <div class="hearts">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+        </div><span class="titleLocation">Alderley Edge (1.9 miles to your location)</span> <a class="view" href="#">Learn More</a>
       </div>
-      <div class="locationInfo flex">
-        <span class="title">Whately Hall</span>
-          <div class="hearts">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-           <span class="titleLocation">Banbury</span>
-      <div class="learnMore flex">
-        <span class="view">Learn More</span>
-      </div>
-      </div>
-      <div class="locationLink flex">
-        <span class="view">Book Now</span>
+      <div class="locationLink">
+        <span class="bestPrice">Hotels.com</span> <span class="price">&pound;65</span> <a class="view" href="#">Book Now</a>
       </div>
     </div>
     <div class="location flex">
-      <div class="locationImg">
-        <img src="resources/images/whately_hall.jpeg">
+      <div class="locationImg"><img src="resources/images/hotels/Mottram_Hall.jpg"></div>
+      <div class="locationInfo">
+        <span class="title">Mottram Hall</span>
+        <div class="hearts">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+        </div><span class="titleLocation">Alderley Edge (2.7 miles to your location)</span> <a class="view" href="#">Learn More</a>
       </div>
-      <div class="locationInfo flex">
-        <span class="title">Whately Hall</span>
-          <div class="hearts">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-           <span class="titleLocation">Banbury</span>
-      <div class="learnMore flex">
-        <span class="view">Learn More</span>
-      </div>
-      </div>
-      <div class="locationLink flex">
-        <span class="view">Book Now</span>
+      <div class="locationLink">
+        <span class="bestPrice">Expedia</span> <span class="price">&pound;101</span> <a class="view" href="#">Book Now</a>
       </div>
     </div>
+    <div class="location flex">
+      <div class="locationImg"><img src="resources/images/hotels/Innkeeper_Lodge.jpg"></div>
+      <div class="locationInfo">
+        <span class="title">Innkeeper's Lodge Alderley Edge</span>
+        <div class="hearts">
+          <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+        </div><span class="titleLocation">Alderley Edge (0.7 miles to your location)</span> <a class="view" href="#">Learn More</a>
+      </div>
+      <div class="locationLink">
+        <span class="bestPrice">Booking.com</span> <span class="price">&pound;85</span> <a class="view" href="#">Book Now</a>
+      </div>
     </div>
-
-  </div> 
+  </div>
 </body>
+</html>
