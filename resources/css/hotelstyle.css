@@ -1,0 +1,190 @@
+body {
+	font-size: 16px;
+	font-family: 'Avenir', sans-serif;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.flex {
+	display: flex;
+	width: 100%;
+}
+
+/*Logo*/
+
+.header {
+	flex-direction: column;
+	color: #FFFFFF;
+	background-color: #3B3561;
+	justify-content: center;
+	z-index: 10;
+}
+
+.logo {
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo img {
+	width: 25rem;
+	padding: 0.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+	.logo img {
+		width: 15rem;
+	}
+}
+
+/*Restaurant Image*/
+.restaurantImage {
+	background-color: #676767;
+	align-items: center;
+	justify-content: center;
+	height: 15rem;
+	z-index: 2;
+}
+
+.restaurantImage img {
+	width: 25rem;
+	height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+.restaurantImage {
+	height: 10rem;
+}
+
+.restaurantImage img {
+	width: 15rem;
+}
+}
+
+
+/*Restaurant*/
+.restaurant {
+	margin-top: -1rem;
+	justify-content: space-around;
+	z-index: 11
+}
+
+@media only screen and (max-width: 700px) {
+	.restaurant {
+		margin-top: -2rem;
+	}
+}
+
+
+/*Restaurant Info*/
+.restaurantInfo {
+	background-color: #FFFFFF;
+	border-radius: 50px;
+	width: 50%;
+	flex-direction: column;
+	color: #3B3561;
+} 
+
+
+.restaurantNav {
+	border-bottom: 1px solid #3B3561;
+	border-radius: 15px 15px 0px 0px;
+	width: 100%;
+	padding: 0.75rem 0rem;
+	background-color: #FFF;
+}
+
+.restaurantNav a {
+	color: #3B3561;
+	font-size: 1.25rem;
+	padding: 1rem;
+}
+
+.name {
+	border-bottom: 1px solid #3B3561;
+	font-size: 3rem;
+	font-weight: 500;
+	padding: 2.25rem 0rem;
+}
+
+.topLevelInfo {
+	margin: 1rem 0rem;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 1rem;
+	width: 75%;
+}
+
+.rating {
+	color: #F05068;
+}
+
+.restaurantDescription {
+	margin: 1.5rem 0rem;
+	font-size: 1.1rem; 
+}
+
+.readMore {
+	color: #F05068;
+}
+
+.readMore:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width:700px) {
+	.restaurant {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.restaurantInfo {
+		width: 90%;
+	}
+
+	.restaurantNav {
+		text-align: center;
+	}
+
+	.restaurantNav a {
+	    font-size: 0.95rem;
+}
+
+	.name {
+		font-size: 2rem;
+	}
+
+	.topLevelInfo {
+		width: 100%;
+		font-size: 0.75rem
+	}
+}
+
+/*Restaurant Booking*/
+.restaurantBooking {
+	background-color: #FFFFFF;
+	width: 30%;
+	justify-content: center;
+	border-radius: 15px 15px 0px 0px;
+	margin-bottom: 1rem;
+}
+
+.restaurantBooking span {
+	font-size: 1.25rem;
+	color: #F05068;
+}
+
+@media only screen and (max-width:700px) {
+	.restaurantBooking {
+		width: 95%;
+		margin-top: 2rem;
+		border: 2px solid #F05068;
+		border-radius: 15px;
+	}
+}

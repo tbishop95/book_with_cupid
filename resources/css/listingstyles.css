@@ -199,10 +199,20 @@ a {
 		display: flex;
 		flex-direction: column;
 	}
+}
 
-	.locationLinkMob {
-		display: inherit;
-		text-align: center;
-		align-items: space-between;
+@media only screen and (max-width: 600px) {
+	.title {
+		font-size: 1.25rem;
 	}
+
+	.view {
+		font-size: 0.75rem;
+	}
+
+	.locationImg img {
+		width: 3rem;
+		height: 2.5rem;
+	}
+
 }
